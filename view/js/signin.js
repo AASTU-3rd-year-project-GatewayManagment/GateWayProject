@@ -25,14 +25,14 @@ function signin(form) {
             console.log(text_status);
 
             if (text_status[1] == "goodadmin" || text_status[1] == "goodemp") {
-                window.location.replace('../../../../Project/GateWayProject/view/pages/admin-search.php');
+                window.location.replace('../../../GateWayProject/view/pages/admin-search.php');
             }
 
 
         }
     }
 
-    xmlhttp.open('post', '../../../../Project/GateWayProject/controller/signin.php');
+    xmlhttp.open('post', '../../../GateWayProject/controller/signin.php');
     xmlhttp.send(form);
 }
 
@@ -59,6 +59,6 @@ function recover(form) {
         }
     }
 
-    xmlhttp.open('post', '../../../../Project/GateWayProject/controller/password-recovery.php');
+    xmlhttp.open('post', '../../../GateWayProject/controller/password-recovery.php');
     xmlhttp.send(form);
 }

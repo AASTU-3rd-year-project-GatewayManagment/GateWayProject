@@ -84,7 +84,7 @@ if(!$dataJson){
 			FROM employee e
 			INNER JOIN user u
 			ON u.ID = e.ID
-			where lower($type) like '$condition' and  u.user_type = '$userType' ORDER BY $sortBy $sortType";
+			where u.$type like '$condition' and  u.user_type = '$userType' ORDER BY $sortBy $sortType";
 
 			
 			$result = mysqli_query($connection,$query);

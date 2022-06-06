@@ -13,10 +13,9 @@ if(isset($_POST['login-type'])){
 	{
 		echo "<div class='alert alert-danger' role='alert'>Invalid Characters</div>_bad";
 	}else{
-	if($loginType != "admin"){
-		$password = md5($password);
-			
-	}
+	
+		$password =  md5($password);
+	
 	$query  = "SELECT * From $loginType  where username = '$username' and password = '$password'";
 	$result = mysqli_query($connection,$query);
 	$firstrow;

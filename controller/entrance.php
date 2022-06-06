@@ -40,7 +40,7 @@ if(isset($_POST['user_id'])){
 									echo "<div class='alert alert-success' role='alert'>User Exited Sucessfully</div>_good";
 									
 								}
-							}catch(Exception){
+							}catch(Exception $e){
 								echo "<div class='alert alert-danger' role='alert'>Error inserting into user and device log</div>_bad";
 							
 							}
@@ -92,7 +92,7 @@ if(isset($_POST['user_id'])){
 				}
 				echo "<div class='alert alert-success' role='alert'>User $str Sucessfully</div>_good";
 
-			}catch(Exception){
+			}catch(Exception $e){
 				die("Error");
 			}
 		}

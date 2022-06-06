@@ -41,7 +41,7 @@ function handleBarcode(barcode) {
     console.log(barcode);
     if (barcode.length > 6) {
         //  do nothing
-        window.location.assign("http://localhost/project/GateWayProject/controller/studentList.php?q=" + barcode + "_" + true);
+        window.location.assign("http://localhost/GateWayProject/controller/studentList.php?q=" + barcode + "_" + true);
 
         // xmlhttp.open("GET", "../../controller/studentList.php"?q=" + barcode + "_" + true, true);
         // xmlhttp.send();

@@ -2,7 +2,8 @@
 <?php
 include '../controller/session.php';
 include '../model/database.php';
-
+echo "hello world";
+print_r($_POST);
 if(isset($_POST['submit'])){
 	if(isset($_SESSION['ID'])){
 		session_unset();

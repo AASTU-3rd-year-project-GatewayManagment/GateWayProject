@@ -46,33 +46,10 @@ if(isset($_GET['q'])){
 
 		}else{
 			echo $check[1];
-			// header("Location: ../view/pages/view-profile.php?error=ENTRY IS GREATER THAN 1");
 		}
 	}
 }
-// 	$numOfRow;
-// if($result){
-	
-// 	$numOfRow = mysqli_num_rows($result);
-	
-// }else{
-// 	echo die("ERRROROROROR");
-// }
-// $text = '';
-// 	if($numOfRow>0){
-		
-// 		while($row = mysqli_fetch_assoc($result) !== false){
-// 			$text.="
-// 			<form action='./view-profile.php'>
-// 				<input name='id' class='hidden-input' value='{$row['ID']}'>
-// 				<input type='submit' value='{$row['ID']}'>
-//             </form>
-// 			";
-// 		}
-// 		echo $text;
-// 	}
 
-// }
 
 
 ?>
