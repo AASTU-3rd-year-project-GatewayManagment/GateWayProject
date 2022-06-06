@@ -19,16 +19,16 @@ if((strlen($oldPass) != strlen(filter_var($oldPass,FILTER_SANITIZE_STRING)))
 										</div>";
 }else{
 		if($newPass == $confirmP){
-			$query = "SELECT password FROM admin where id = 'ets0512/12'";
+			$query = "SELECT password FROM admin where id = '{$_SESSION['ID']}'";
 			$result = mysqli_query($connection,$query);
 			if($result){
 
 				while($row1 = mysqli_fetch_assoc($result)){
-					if($row1['password'] == $oldPass){
-						
+					if($row1['password'] == md5($oldPass)){
+						$newPass = md5($newPass);
 						$query = "UPDATE admin
 						SET password = '$newPass'
-						WHERE ID = 'ets0512/12';
+						WHERE ID = '{$_SESSION['ID']}';
 						";
 						
 						if( mysqli_query($connection,$query) ){
@@ -90,7 +90,7 @@ if((strlen($newEmail) != strlen(filter_var($newEmail,FILTER_SANITIZE_STRING)))
 		$result = mysqli_query($connection,$query);
 			
 		while($row1 = mysqli_fetch_assoc($result)){
-			if($row1['password'] == $password){
+			if($row1['password'] == md5($password)){
 				
 				$query = "UPDATE admin
 				SET email = '$newEmail'
@@ -142,12 +142,12 @@ if(isset($_GET['userPass'])){
 												</div>";
 	}else{
 
-			$query = "SELECT password FROM admin where id = 'ets0512/12'";
+			$query = "SELECT password FROM admin where id = '{$_SESSION['ID']}'";
 			$result = mysqli_query($connection,$query);
 				
 			while($row1 = mysqli_fetch_assoc($result)){
-				if($row1['password'] == $adminP){
-					
+				if($row1['password'] == md5($adminP)){
+					$newPass = md5($newPass);
 					$query = "UPDATE employee
 					SET password = '$newpass'
 					WHERE ID = '$userId';
@@ -202,7 +202,7 @@ if(isset($_GET['userPass'])){
 		$result = mysqli_query($connection,$query);
 			
 		while($row1 = mysqli_fetch_assoc($result)){
-			if($row1['password'] == $adminP){
+			if($row1['password'] == md5($adminP)){
 				
 				$query = "UPDATE employee
 				SET userName = '$newUserName'
@@ -253,7 +253,7 @@ if(isset($_GET['userPass'])){
 		$result = mysqli_query($connection,$query);
 			
 		while($row1 = mysqli_fetch_assoc($result)){
-			if($row1['password'] == $adminP){
+			if($row1['password'] == md5($adminP)){
 				
 				$query = "DELETE FROM employee
 				WHERE ID = '$userId';
