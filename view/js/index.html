@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title> Gateway Management System</title>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <!-- image name and id section -->
+        <div class="avatar_name_id">
+            <!-- image section -->
+            <div class="avatar">
+                <!--  image of the student or staff -->
+                <img src="images/avatar1.jpg" alt="avatar">
+
+            </div>
+
+            <!-- name and id section -->
+            <div class="name_id">
+                <!-- Name of the student or staff here -->
+
+                <h3>Rakeb Zengada</h3>
+                <!-- Id of the student or staff -->
+                <h4>ETS0889/12</h4>
+            </div>
+
+        </div>
+
+        <!-- devices container -->
+
+        <div class="device_container">
+            <!-- title of the info section -->
+            <h2>Devices</h2>
+
+            <ul class="device_header">
+                <li class="device_id"><span> ID</span></li>
+                <li class="device_name"><span>Device Name</span></li>
+                <li class="device_serial"><span>Serial Number</span></li>
+                <li class="device_entry"><span>Last Entry </span></li>
+                <li class="lastchild"></li>
+            </ul>
+
+            <!-- Devices registered for the user -->
+            <div class="device_list">
+
+                <form action="">
+                    <ul class="device">
+                        <li class="device_id"><span>1</span></li>
+                        <li class="device_name"><span>HP</span></li>
+                        <li class="device_serial"><span>wed33499c344</span></li>
+                        <li class="device_entry"><span>25/25/2000 2:45PM</span></li>
+                        <li class="lastchild"> <button type="submit" method="post"> Edit </button> </li>
+
+                    </ul>
+                </form>
+
+
+            </div>
+            <!-- the inline style for the form should be correcteed -->
+            <form action="verify" method="post" id="form1" style="width: 100%;">
+
+                <ul class="add_device">
+                    <li class="device_id"><span id="tobe_added_Device_id"></span>
+                    </li>
+                    <li class="device_name"><input id="device_name" name="deviceName" type="text" placeholder="Device Name"> </input>
+                    </li>
+                    <li class="device_serial"><input id="device_serial" name="serialNum" type="text" placeholder="Serial Number"></input>
+                    </li>
+                    <li class="device_entry"><input id="device_entry" name="lastEntry" type="text" placeholder="Last Entry"> </input>
+                    </li>
+                    <li class="lastchild"> <button id="correctBtn" class="promptBtn lastchild" type="submit" form="form1"><img src="images/correct.png" alt="add"></button>
+                        <button id="closeBtn" class="promptBtn"><img src="images/cancel.png" alt="close" ></button></li>
+
+                </ul>
+            </form>
+            <ul class="device">
+                <li class="device_id"><button class="addButton" onclick="add_device()"><img src="images/redplus.png" alt=""></button></li>
+                <li class="device_name"></li>
+                <li class="device_serial"></li>
+                <li class="device_entry"></li>
+                <li class="lastchild"></li>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
