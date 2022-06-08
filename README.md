@@ -18,7 +18,7 @@
   #### * Download the repository and put it in xamp/htdocs folder
   #### * To open the landing page open a browser and insert the url below:
         localhost/GateWayProject
-  #### * Sign in as admin or default(worker) using the credentials provided above
+  #### * Sign in as admin or default(employee) using the credentials provided above
   #### * On the search page insert a valid id and click on it to view the profile, for Example
           ets0512/12
   #### * student,staff and other employee page have tables of their own,
