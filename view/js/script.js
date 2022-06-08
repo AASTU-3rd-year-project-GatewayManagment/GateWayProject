@@ -97,6 +97,15 @@ function opener(id) {
 //     }
 // });
 
+// logout img click
+
+if (document.getElementById('logout-btn')) {
+    document.getElementById('logout-btn').addEventListener('click', function() {
+        document.getElementById('logout').click();
+    })
+}
+
+
 // add user page error handling and form submit
 if (document.getElementById('add-std-form')) {
     document.getElementById('add-std-form').addEventListener('submit', function(e) {

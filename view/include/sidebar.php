@@ -77,10 +77,10 @@ $active = $_SESSION['page'];
             </li>
 
             <li>
-                <a href="../../controller/logout.php"> <img src="../images/logout-white.png" alt="search icon" width="50px" height="50px">
+                <a id="logout-btn"> <img src="../images/logout-white.png" alt="search icon" width="50px" height="50px">
                 </a>
                 <form action="../../controller/logout.php" method="post" class="sidenav-link">
-                    <input type="submit" name="submit" value="Log out">
+                    <input type="submit" name="submit" id="logout" value="Log out">
 
                 </form>
             </li>
