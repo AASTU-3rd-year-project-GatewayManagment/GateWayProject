@@ -40,8 +40,7 @@
   
   [user-list.csv](https://github.com/AASTU-3rd-year-project-GatewayManagment/GateWayProject/files/8863369/user-list.csv)
 
-
-
+ ### * (Notice)Daily Report page needs a connection,so it won't work if you are not connected to the internet.
   
   ### Group Members
   #### -  Milkaai Getachew      ETS 0478/12
