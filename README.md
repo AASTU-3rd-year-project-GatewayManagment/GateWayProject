@@ -38,8 +38,9 @@
   #### * Excel files can be imported to insert values into the database using add button on      student,staff and other employee page. sample Excel file is provided in the repository or      click on the link below.
   
   
-  
-  [user-list.csv](https://github.com/AASTU-3rd-year-project-GatewayManagment/GateWayProject/user-list.csv)
+  [user-list.csv](https://github.com/AASTU-3rd-year-project-GatewayManagment/GateWayProject/files/8863369/user-list.csv)
+
+
 
   
   ### Group Members
